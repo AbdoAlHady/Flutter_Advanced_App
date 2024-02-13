@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/helpers/spacing.dart';
 import '../../../../core/widgets/app_text_form_field.dart';
-import 'password_validation.dart';
+import '../../../../core/widgets/password_validation.dart';
 
 class EmailAndPassword extends StatefulWidget {
   const EmailAndPassword({super.key});
