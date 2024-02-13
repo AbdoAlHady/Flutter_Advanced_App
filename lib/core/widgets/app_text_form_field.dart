@@ -14,7 +14,10 @@ class AppTextFormField extends StatelessWidget {
       required this.hintText,
       this.hintStyle,
       this.isObscureText,
-      this.suffixIcon, this.backgroundColor});
+      this.suffixIcon,
+      this.backgroundColor,
+      this.controller,
+      required this.validator});
   final EdgeInsetsGeometry? contentPadding;
   final InputBorder? focusedBorder;
   final InputBorder? enabledBorder;
@@ -24,10 +27,16 @@ class AppTextFormField extends StatelessWidget {
   final bool? isObscureText;
   final Widget? suffixIcon;
   final Color? backgroundColor;
+  final TextEditingController? controller;
+  final Function(String?) validator;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator: (value) {
+        return validator(value);
+      },
       decoration: InputDecoration(
           isDense: true,
           contentPadding: contentPadding ??
@@ -43,11 +52,19 @@ class AppTextFormField extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppSize.s16),
                   borderSide: const BorderSide(
                       color: ColorsManager.lighterGrey, width: AppSize.s1_3)),
+          errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(AppSize.s16),
+              borderSide:
+                  const BorderSide(color: Colors.red, width: AppSize.s1_3)),
+          focusedErrorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(AppSize.s16),
+              borderSide:
+                  const BorderSide(color: Colors.red, width: AppSize.s1_3)),
           hintStyle: hintStyle ?? TextStyles.font14GreyMeduim,
           hintText: hintText,
           suffixIcon: suffixIcon,
           fillColor: backgroundColor ?? ColorsManager.moreLightGrey,
-          filled:true),
+          filled: true),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14DarkBlueMeduim,
     );
