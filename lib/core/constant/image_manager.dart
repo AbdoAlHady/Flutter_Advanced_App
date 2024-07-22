@@ -7,6 +7,8 @@ class ImagesManager {
 
   /// -- Images
   static const String onBoardingDotctor = 'assets/images/onboarding_doctor.png';
+  static const String homebluePattern = 'assets/images/home_blue_pattern.png';
+  static const String homeDoctor = 'assets/images/home_doctor.png';
 
 
 }
