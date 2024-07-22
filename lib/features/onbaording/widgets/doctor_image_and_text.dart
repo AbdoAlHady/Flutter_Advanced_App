@@ -11,7 +11,7 @@ class DoctorImageAndText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SvgPicture.asset(ImageManager.docLogoLowOpacity),
+        SvgPicture.asset(ImagesManager.docLogoLowOpacity),
         Container(
           foregroundDecoration: BoxDecoration(
               gradient: LinearGradient(
@@ -24,7 +24,7 @@ class DoctorImageAndText extends StatelessWidget {
             ], // Means the point that the gradient will stop on it
           )),
           child: Image.asset(
-            ImageManager.onBoardingDotctor,
+            ImagesManager.onBoardingDotctor,
           ),
         ),
         Positioned(

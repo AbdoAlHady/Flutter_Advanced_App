@@ -15,6 +15,7 @@ class TextStyles {
   static TextStyle font14DarkBlueMeduim =TextStyle(fontSize: 14.sp,fontWeight: FontWeightHelper.meduim,color: ColorsManager.darkBlue);
   static TextStyle font12BlueRegular=TextStyle(fontSize: AppSize.s12.sp,fontWeight: FontWeightHelper.regular,color: ColorsManager.mainBlue);
   static TextStyle font16WhiteSemiBold=  TextStyle(fontSize: 16.sp,fontWeight: FontWeightHelper.semiBold,color: Colors.white);
+  static TextStyle font18BlackBold=  TextStyle(fontSize: 18.sp,fontWeight: FontWeightHelper.bold,color:ColorsManager.darkBlue);
   static TextStyle font11GreyRegular=  TextStyle(fontSize: 11.sp,fontWeight: FontWeightHelper.regular,color: ColorsManager.lightGrey);
   static TextStyle font11DarkBlueMeduim=  TextStyle(fontSize: 11.sp,fontWeight: FontWeightHelper.meduim,color: ColorsManager.darkBlue);
   static TextStyle font13BlueSemiBold=  TextStyle(fontSize: 13.sp,fontWeight: FontWeightHelper.semiBold,color: ColorsManager.mainBlue);
