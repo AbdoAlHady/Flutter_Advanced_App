@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'widgets/doctor_speciality_see_all.dart';
+import 'widgets/doctors_list_view.dart';
 import 'widgets/home_top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,6 +30,7 @@ class HomeScreen extends StatelessWidget {
               verticalSpacing(16),
               const DoctorSpecialityListView(),
               verticalSpacing(20),
+              const DoctorsListView(),
             ],
           ),
         ),
