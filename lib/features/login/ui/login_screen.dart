@@ -1,7 +1,7 @@
 import 'package:advanced_flutter_app/core/constant/value_manager.dart';
 import 'package:advanced_flutter_app/core/helpers/spacing.dart';
 import 'package:advanced_flutter_app/core/theming/text_styles.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_cubit.dart';
 import 'package:advanced_flutter_app/features/login/ui/widgets/dont_heve_account_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
