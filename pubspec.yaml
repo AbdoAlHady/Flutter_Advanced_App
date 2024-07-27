@@ -59,6 +59,8 @@ dependencies:
   flutter_screenutil: ^5.9.3 
   firebase_core: ^2.24.2
   bloc_test: ^9.1.7
+  # Library to load and cache network images.
+  cached_network_image: ^3.3.1
   
 dev_dependencies:
   flutter_test:

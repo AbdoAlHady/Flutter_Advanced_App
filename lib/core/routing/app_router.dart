@@ -1,5 +1,6 @@
 import 'package:advanced_flutter_app/core/di/dependancy_ingection.dart';
 import 'package:advanced_flutter_app/core/routing/routes.dart';
+import 'package:advanced_flutter_app/features/home/logic/home_cubit.dart';
 import 'package:advanced_flutter_app/features/home/ui/home_screen.dart';
 import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
 import 'package:advanced_flutter_app/features/login/ui/login_screen.dart';
@@ -11,7 +12,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../features/signup/ui/sign_up_screen.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     final argument = settings.arguments;
     switch (settings.name) {
       case Routes.onBoardingScreen:
@@ -26,22 +27,20 @@ class AppRouter {
         );
       case Routes.homeScreen:
         return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => BlocProvider(
+            create: (context) => HomeCubit(getIt())..getSpecialization(),
+            child: const HomeScreen(),
+          ),
         );
       case Routes.signupScreen:
         return MaterialPageRoute(
-          builder: (context) =>  BlocProvider(
+          builder: (context) => BlocProvider(
             create: (context) => getIt<SignupCubit>(),
             child: const SignUpScreen(),
           ),
         );
       default:
-        return MaterialPageRoute(
-            builder: (context) => Scaffold(
-                  body: Center(
-                    child: Text("No route defined for ${settings.name}"),
-                  ),
-                ));
+        return null;
     }
   }
 }
