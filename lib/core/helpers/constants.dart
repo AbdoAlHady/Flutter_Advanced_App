@@ -1,6 +1,5 @@
-class  SharedPrefKeys {
+bool isLoggedInUser = false;
 
-  static const String userToken='userToken';
-
-  
+class SharedPrefKeys {
+  static const String userToken = 'userToken';
 }
