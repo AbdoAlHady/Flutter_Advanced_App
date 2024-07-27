@@ -1,5 +1,5 @@
 import 'package:advanced_flutter_app/core/helpers/app_regex.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

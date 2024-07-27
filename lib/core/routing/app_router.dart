@@ -2,7 +2,7 @@ import 'package:advanced_flutter_app/core/di/dependancy_ingection.dart';
 import 'package:advanced_flutter_app/core/routing/routes.dart';
 import 'package:advanced_flutter_app/features/home/logic/home_cubit.dart';
 import 'package:advanced_flutter_app/features/home/ui/home_screen.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_cubit.dart';
 import 'package:advanced_flutter_app/features/login/ui/login_screen.dart';
 import 'package:advanced_flutter_app/features/onbaording/onboarding_screen.dart';
 import 'package:advanced_flutter_app/features/signup/logic/cubit/signup_cubit.dart';

@@ -4,7 +4,7 @@ import 'package:advanced_flutter_app/features/home/data/apis/home_api_service.da
 import 'package:advanced_flutter_app/features/home/data/repos/home_repo.dart';
 import 'package:advanced_flutter_app/features/home/logic/home_cubit.dart';
 import 'package:advanced_flutter_app/features/login/data/repos/login_repo.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_cubit.dart';
 import 'package:advanced_flutter_app/features/signup/data/repo/sign_up_repo.dart';
 import 'package:advanced_flutter_app/features/signup/logic/cubit/signup_cubit.dart';
 import 'package:dio/dio.dart';

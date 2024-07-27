@@ -2,8 +2,8 @@ import 'package:advanced_flutter_app/core/helpers/app_loaders.dart';
 import 'package:advanced_flutter_app/core/helpers/extension.dart';
 import 'package:advanced_flutter_app/core/routing/routes.dart';
 import 'package:advanced_flutter_app/core/theming/app_colors.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_cubit.dart';
-import 'package:advanced_flutter_app/features/login/logic/cubit/login_state.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_cubit.dart';
+import 'package:advanced_flutter_app/features/login/logic/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

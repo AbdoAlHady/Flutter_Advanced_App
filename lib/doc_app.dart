@@ -1,3 +1,4 @@
+import 'package:advanced_flutter_app/core/helpers/constants.dart';
 import 'package:advanced_flutter_app/core/routing/app_router.dart';
 import 'package:advanced_flutter_app/core/routing/routes.dart';
 import 'package:advanced_flutter_app/core/theming/app_colors.dart';
@@ -20,7 +21,7 @@ class DocApp extends StatelessWidget {
           primaryColor: ColorsManager.mainBlue,
           scaffoldBackgroundColor: Colors.white,
         ),
-        initialRoute: Routes.homeScreen,
+        initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.loginScreen,
       ),
     );
   }
