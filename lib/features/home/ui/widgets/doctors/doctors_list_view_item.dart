@@ -1,5 +1,6 @@
 import 'package:advanced_flutter_app/core/helpers/spacing.dart';
 import 'package:advanced_flutter_app/core/theming/text_styles.dart';
+import 'package:advanced_flutter_app/core/widgets/shimmer_effect.dart';
 import 'package:advanced_flutter_app/features/home/data/models/specialization_response.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,7 @@ class DoctorsListViewItem extends StatelessWidget {
                     'https://images.unsplash.com/photo-1584467735815-f778f274e296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvY3RvciUyMGltYWdlfGVufDB8fDB8fHww',
                 width: 110.w,
                 height: 110.h,
+                progressIndicatorBuilder: (context, url, progress) => ShimmerEffect(width: 110.w, height: 110.h, borderRadius: 12),
                 fit: BoxFit.fill),
           ),
           horizontalSpacing(16),
