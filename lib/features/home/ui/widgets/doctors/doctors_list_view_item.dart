@@ -27,13 +27,6 @@ class DoctorsListViewItem extends StatelessWidget {
                 width: 110.w,
                 height: 110.h,
                 fit: BoxFit.fill),
-
-            // Image.network(
-            //   'https://images.unsplash.com/photo-1584467735815-f778f274e296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvY3RvciUyMGltYWdlfGVufDB8fDB8fHww',
-            //   width: 110.w,
-            //   height: 110.h,
-            //   fit: BoxFit.fill,
-            // ),
           ),
           horizontalSpacing(16),
           // Doctor Details
